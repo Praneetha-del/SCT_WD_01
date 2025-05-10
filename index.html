@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Team India Cricket Stars</title>
     <style>
-        /* RESET & BASE */
+     
         * {
             margin: 0;
             padding: 0;
@@ -24,8 +24,8 @@
         .slideshow-container {
             position: relative;
             width: 100%;
-            height:
-            overflow: hidden; /* ensure children like video are clipped properly */
+           
+            overflow: hidden; 
         }
 
         .background-video {
@@ -35,53 +35,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1; /* keep it behind the content */
+            z-index: -1; 
         }
 
-        /* NAVBAR */
-      /* nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: #0072ff;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; /* Vertically align items 
-            padding: 15px 20px;  Adjust padding for smaller screens 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            transition: background 0.3s ease;
-        }
-
-        nav.scrolled {
-            background: rgb(14, 3, 56);
-        }
-
-        nav .logo {
-            font-weight: bold;
-            font-size: 1.2rem; /* Adjust logo font size 
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px; /* Adjust gap between links 
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease, transform 0.2s;
-            font-size: 0.9rem; /* Adjust link font size 
-        }
-
-        nav ul li a:hover {
-            color: #ffcc00;
-            transform: scale(1.05);
-        }*/
+       
 
 
         nav {
@@ -131,14 +88,13 @@
 
 
         section {
-            padding: 80px 15px 40px; /* Adjust section padding */
-            min-height: auto; /* Allow sections to take necessary height */
+            padding: 80px 15px 40px; 
+            min-height: auto;
             text-align: center;
         }
 
 
 
-         /* Responsive Styles */
     @media (max-width: 768px) {
       nav ul {
         display: none;
@@ -164,14 +120,14 @@
       }
     }
 
-        /* HOME SECTION */
+      
         #home {
             color: rgb(14, 3, 56);
-            padding-top: 60px; /* Adjust padding to account for fixed navbar */
+            padding-top: 60px; 
         }
 
         #home h1 {
-            font-size: 2rem; /* Adjust heading font size */
+            font-size: 2rem; 
             margin-bottom: 20px;
             color: #ffcc00;
             position: relative;
@@ -179,49 +135,7 @@
             padding: 15px;
         }
 
-        /* Slideshow Container */
-        /*.player-slide {
-            display: none;
-            animation: fade 1.5s ease-in-out;
-            flex-wrap: wrap;
-            gap: 20px; 
-            justify-content: center;
-        }
-
-        @keyframes fade {
-            from {opacity: .9}
-            to {opacity: 1}
-        }
-
-        .player-slide.active {
-            display: flex;
-        }
-
-        .player-card {
-            background: rgb(14, 3, 56);
-            color: #ffcc00;
-            border-radius: 12px;
-            width: 160px; 
-            padding: 15px; 
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            transition: transform 0.4s ease;
-            text-align: center;
-            margin-bottom: 15px; 
-        }
-
-        .player-card:hover {
-            transform: scale(1.03);
-        }
-
-        .player-card img {
-            width: 80px; 
-            height: 80px; 
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-            border: 3px solid #fff;
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-        }*/
+        
         .player-slide {
   display: flex;
   flex-wrap: wrap;
@@ -240,8 +154,7 @@
   transition: transform 0.4s ease;
   text-align: center;
   margin-bottom: 15px;
-  flex: 1 1 160px; /* Allow flex resizing */
-  max-width: 160px;
+  flex: 1 1 160px; 
 }
 
 .player-card:hover {
@@ -258,7 +171,6 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Optional: Improve spacing on small screens */
 @media (max-width: 600px) {
   .player-card {
     width: 45%;
@@ -283,17 +195,17 @@
             margin: 3px 0;
         }
 
-        /* Next & previous buttons */
+   
         .prev, .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
             width: auto;
-            padding: 12px; /* Adjust button padding */
-            margin-top: -18px; /* Adjust margin */
+            padding: 12px; 
+            margin-top: -18px; 
             color: white;
             font-weight: bold;
-            font-size: 1.5rem; /* Adjust font size */
+            font-size: 1.5rem; 
             transition: 0.6s ease;
             border-radius: 3px;
             user-select: none;
@@ -302,11 +214,11 @@
         }
 
         .prev {
-            left: 5px; /* Adjust position */
+            left: 5px;
         }
 
         .next {
-            right: 5px; /* Adjust position */
+            right: 5px; 
         }
 
         .prev:hover, .next:hover {
@@ -315,16 +227,16 @@
 
         .dots {
             text-align: center;
-            margin-top: 15px; /* Adjust margin */
+            margin-top: 15px; 
             position: relative;
             z-index: 2;
         }
 
         .dot {
             cursor: pointer;
-            height: 6px; /* Adjust dot size */
-            width: 6px; /* Adjust dot size */
-            margin: 0 3px; /* Adjust dot spacing */
+            height: 6px; 
+            width: 6px; 
+            margin: 0 3px; 
             background-color: #bbb;
             border-radius: 50%;
             display: inline-block;
@@ -340,16 +252,16 @@
         }
 
         h2 {
-            margin-bottom: 15px; /* Adjust margin */
+            margin-bottom: 15px;
             color: #222;
-            font-size: 1.8rem; /* Adjust heading size */
+            font-size: 1.8rem; 
         }
 
         .player-container {
             display: flex;
             justify-content: center;
-            gap: 15px; /* Adjust gap */
-            margin-top: 15px; /* Adjust margin */
+            gap: 15px; 
+            margin-top: 15px; 
             flex-wrap: wrap;
         }
 
@@ -396,7 +308,7 @@
   margin-bottom: 15px;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
   #achievements h2 {
     font-size: 1.6rem;
@@ -435,29 +347,29 @@
 
         #contact {
             background: #fff;
-            padding: 60px 15px; /* Adjust padding */
+            padding: 60px 15px; 
         }
 
         #contact div {
-            max-width: 100%; /* Make container responsive */
+            max-width: 100%; 
             margin: 0 auto;
         }
 
         #contact div div {
-            flex: 1 1 300px; /* Distribute space evenly, min width 300px */
-            margin-bottom: 30px; /* Add margin between contact info and form */
+            flex: 1 1 300px; 
+            margin-bottom: 30px;
         }
 
         #contact h2 {
             color: #0047ab;
             margin-bottom: 20px;
-            font-size: 1.6rem; /* Adjust heading size */
+            font-size: 1.6rem;
         }
 
         #contact p {
             margin: 15px 0;
             color: #333;
-            font-size: 0.9rem; /* Adjust paragraph size */
+            font-size: 0.9rem; 
         }
 
         #contact i {
@@ -469,12 +381,12 @@
             margin-top: 20px;
             margin-bottom: 10px;
             color: #333;
-            font-size: 1.1rem; /* Adjust heading size */
+            font-size: 1.1rem; 
         }
 
         #contact a {
             margin-right: 10px;
-            font-size: 1.3rem; /* Adjust icon size */
+            font-size: 1.3rem; 
             color: #333;
         }
 
@@ -485,7 +397,7 @@
         #contact form label {
             display: block;
             margin-bottom: 5px;
-            font-size: 0.9rem; /* Adjust label size */
+            font-size: 0.9rem; 
             color: #555;
         }
 
@@ -494,14 +406,14 @@
         #contact form textarea {
             width: 100%;
             padding: 8px;
-            font-size: 0.9rem; /* Adjust input size */
+            font-size: 0.9rem; 
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
         }
 
         #contact form textarea {
-            rows: 4; /* Adjust textarea height */
+            rows: 4; 
         }
 
         #contact form button[type="submit"] {
@@ -510,17 +422,17 @@
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
-            font-size: 1rem; /* Adjust button text size */
+            font-size: 1rem; 
             cursor: pointer;
-            width: 100%; /* Make button full width on smaller screens */
+            width: 100%;
         }
 
         footer {
             background-color: black;
             color: #fff;
-            padding: 15px; /* Adjust padding */
+            padding: 15px; 
             text-align: center;
-            font-size: 0.8rem; /* Adjust font size */
+            font-size: 0.8rem; 
         }
 
         footer div {
@@ -540,7 +452,7 @@
             text-decoration: none;
         }
 
-        /* Media Queries for Responsiveness */
+     
         @media (min-width: 768px) {
             nav {
                 padding: 16px 32px;
@@ -736,19 +648,18 @@
     
     <div class="slideshow-container">
 
-      <!-- Background Video --><div class="overlay">
+     <div class="overlay">
 
       <video class="background-video" autoplay muted loop>
         <source src="crick4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video></div>
   
-      <!-- Heading on top of video -->
+     
       <h1 style="position: relative; z-index: 2; padding-top: 20px;padding-bottom: 35px;"> Meet the Stars of Indian Cricket</h1>
   
-      <!-- Slides -->
       <div class="player-slide active">
-        <!-- Players (Slide 1) -->
+      
         <div class="player-card">
           <img src="rohit3.png" alt="Rohit Sharma" />
           <h3>Rohit Sharma</h3>
@@ -783,7 +694,7 @@
       </div>
   
       <div class="player-slide">
-        <!-- Players (Slide 2) -->
+        
         <div class="player-card">
           <img src="rahul.png" alt="KL Rahul" />
           <h3>KL Rahul</h3>
@@ -856,12 +767,11 @@
 
 
       
-      <!-- Navigation buttons -->
       <a class="prev" onclick="plusSlides(-1, 'home')">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 'home')">&#10095;</a>
   
-      <!-- Dots navigation -->
-      <!-- Dots navigation -->
+ 
+
 <div class="dots" style="position: relative; z-index: 2;">
     <span class="dot active-dot" onclick="currentSlide(1, 'home')"></span>
     <span class="dot" onclick="currentSlide(2, 'home')"></span>
@@ -1081,7 +991,7 @@
   </section>
 
   <script>
-    // Change navbar style on scroll
+  
     window.addEventListener('scroll', () => {
       const navbar = document.getElementById('navbar');
       if (window.scrollY > 50) {
@@ -1095,7 +1005,6 @@
       document.querySelector("nav ul").classList.toggle("active");
     }
 
-    // Slideshow functionality
     let slideIndexes = {
       'home': 1,
       'batters': 1,
@@ -1103,14 +1012,12 @@
       'achievements': 1
     };
 
-    // Initialize slideshows
     document.addEventListener('DOMContentLoaded', function() {
       showSlides(1, 'home');
       showSlides(1, 'batters');
       showSlides(1, 'bowlers');
       showSlides(1, 'achievements');
-      
-      // Auto-advance home slides every 5 seconds
+  
       setInterval(() => plusSlides(1, 'home'), 5000);
     });
 
@@ -1130,22 +1037,21 @@
       if (n > slides.length) { slideIndexes[section] = 1; }
       if (n < 1) { slideIndexes[section] = slides.length; }
       
-      // Hide all slides
+ 
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
       }
       
-      // Remove active class from all dots
+    
       for (i = 0; i < dots.length; i++) {
         dots[i].classList.remove('active-dot');
       }
-      
-      // Show current slide
+ 
       if (slides.length > 0) {
         slides[slideIndexes[section]-1].style.display = 'flex';
       }
       
-      // Highlight current dot
+
       if (dots.length > 0) {
         dots[slideIndexes[section]-1].classList.add('active-dot');
       }
@@ -1155,7 +1061,6 @@
     <div style="max-width: 1200px; margin: 0 auto;">
       <div style="display: flex; flex-wrap: wrap; gap: 40px;">
   
-        <!-- Left: Indian Cricket Team Contact Info -->
         <div style="flex: 1; min-width: 300px;">
           <h2 style="color: #0047ab; margin-bottom: 30px;">Get In Touch</h2>
   
@@ -1180,7 +1085,7 @@
             +91 1111111222
           </p>
   
-          <!-- Social Media Icons -->
+        
           <div style="margin-top: 30px;">
             <h3>Follow Us</h3>
             <a href="https://www.facebook.com/IndianCricketTeam" style="margin-right: 15px; font-size: 20px; color: #333;"><i class="fab fa-facebook-f"></i></a>
@@ -1190,7 +1095,6 @@
           </div>
         </div>
   
-        <!-- Right: Contact Form -->
         <div style="flex: 1; min-width: 300px; background: #f9fafb; padding: 30px; border-radius: 10px;">
           <form>
             <div style="margin-bottom: 20px;">
@@ -1223,10 +1127,10 @@
     </div>
   </section>
   
-  <!-- Add this just before the closing </body> tag -->
+
 <footer style="background-color: black; color:#fff; padding: 20px; text-align: center;">
     <div style="max-width: 1200px; margin: 0 auto;">
-      <p style="color:white">© 2024 Team India Cricket. All Rights Reserved.</p><br>
+      <p style="color:white">© 2025 Team India Cricket. All Rights Reserved.</p><br>
       <p style="margin-top: 10px; font-size: 0.9rem;color:white">
         This is a fan-made tribute site. All images and player information are used for educational purposes only.
       </p>
